@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# from http://www.whenisfive.com/2012/02/04/brute-forcing-luks/
 DEVICE=$2
 while read line; do
     echo "$line" | cryptsetup luksOpen "$DEVICE" encrypted 2>/dev/null
